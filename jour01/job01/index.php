@@ -1,6 +1,8 @@
 <?php
 
 $name = 'LaPlateforme';
-echo $name
+$var = 'Vive';
+$pts = '!';
+echo "$var $name $pts"
 
 ?>
