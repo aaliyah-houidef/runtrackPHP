@@ -1,8 +1,6 @@
 <?php
 
-$name = 'LaPlateforme';
-$var = 'Vive';
-$pts = '!';
-echo "$var $name $pts"
+$number = '6' + 4;
+echo $number
 
 ?>
