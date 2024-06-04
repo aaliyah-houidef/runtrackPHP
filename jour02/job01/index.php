@@ -6,7 +6,7 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <form action="index.php" method="get">
+    <form action="../job02/index.php" method="get">
         Jour : <input type="text" name="jour"><br>
         Mois : <input type="text" name="mois"><br>
         Année : <input type="text" name="année"><br>
