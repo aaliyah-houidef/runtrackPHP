@@ -6,7 +6,7 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <form action="../job04/index.php" method="post">
         Jour : <input type="text" name="jour"><br>
         Mois : <input type="text" name="mois"><br>
         Année : <input type="text" name="année"><br>
@@ -14,15 +14,11 @@
     </form>
 
     <?php
-        if (isset($_POST['jour'])) {
-            echo "Jour : " . $_POST['jour'] . "<br>";
-        }
-        if (isset($_POST['mois'])) {
-            echo "Mois : " . $_POST['mois'] . "<br>";
-        }
-        if (isset($_POST['année'])) {
-            echo "Année : " . $_POST['année'] . "<br>";
-        }
-    ?>
+    if (!empty($_POST)) {
+        $nb_args = count($_POST);
+        echo "Nombre d'arguments : $nb_args";
+    }
+?>
+
 </body>
 </html>
