@@ -1,14 +1,14 @@
 <?php
 
 session_start();
-if (isset($_SESSION['nbVisites'])) {
+if (!isset($_SESSION['nbVisites'])) {
     $_SESSION['nbVisites'] = 0;
 }
 
-$_SESSION['nbVisites']++;
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reset'])) {
+if (isset($_POST['reset'])) {
     $_SESSION['nbVisites'] = 0;
+} else {
+    $_SESSION['nbVisites']++;
 }
 ?>
 <!DOCTYPE html>
